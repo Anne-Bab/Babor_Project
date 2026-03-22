@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Babor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="../index.html" class="logo">Babor<span>.</span></a>
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Lab Activities</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="thankyou.html">Thank You</a>
+      </nav>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-hero">
+      <div class="wrap">
+        <div class="page-hero-icon-wrapper">
+          <img src="../assets/img/contact-icon.svg" alt="Contact icon" class="page-hero-icon" />
+        </div>
+        <p class="hero-tag">Contact</p>
+        <h1>Get in touch</h1>
+        <p>Have a project in mind or want to connect? Send a message below.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="contact-layout">
+          <div>
+            <h2 class="section-title">
+              <img src="../assets/img/contact-icon.svg" alt="" class="section-title-icon" />
+              Say hello
+            </h2>
+            <p class="section-subtitle">I aim to reply thoughtfully. You can also reach out via email, Facebook, or Instagram.</p>
+            <ul class="contact-info-list">
+              <li>
+                <!-- Email Icon -->
+                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <polyline points="2,4 12,13 22,4"/>
+                </svg>
+                <span>Email</span> <a href="mailto:aceyyyzyk@gmail.com">aceyyyzyk@gmail.com</a>
+              </li>
+              <li>
+                <!-- Facebook Icon -->
+                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+                <span>Facebook</span> <a href="https://www.facebook.com/aysnowman" target="_blank" rel="noreferrer">Anne Claire Babor</a>
+              </li>
+              <li>
+                <!-- Instagram Icon -->
+                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+                </svg>
+                <span>Instagram</span> <a href="https://www.instagram.com/aysnowman?igsh=MTVzZ3N1eGMxcHp4cw==" target="_blank" rel="noreferrer">aysnowman</a>
+              </li>
+              <li>
+                <!-- GitHub Icon -->
+                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+                <span>GitHub</span> <a href="https://github.com/Anne-Bab" target="_blank" rel="noreferrer">Anne-Bab</a>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="thanks">
+      <div class="wrap">
+        <h2 class="section-title">
+          <img src="../assets/img/about-icon.svg" alt="" class="section-title-icon" />
+          Thank You
+        </h2>
+        <p class="section-subtitle">Thank you for reaching out and viewing my portfolio!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Babor. All rights reserved. Thank you for viewing!</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

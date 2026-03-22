@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Activities | Babor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/games.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="../index.html" class="logo">Babor<span>.</span></a>
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Lab Activities</a>
+        <a href="contact.html">Contact</a>
+        <a href="thankyou.html">Thank You</a>
+      </nav>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-hero">
+      <div class="wrap">
+        <div class="page-hero-icon-wrapper">
+          <img src="../assets/img/lab-icon.svg" alt="Lab Activities icon" class="page-hero-icon" />
+        </div>
+        <p class="hero-tag">GitHub</p>
+        <h1>Projects</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2 class="section-title">
+          <img src="../assets/img/lab-icon.svg" alt="" class="section-title-icon" />
+          Lab Activities
+        </h2>
+        
+        <div class="cards">
+          <article class="card">
+            <img src="../assets/img/proj-it223.svg" alt="" class="card-img" />
+            <h3>The Observer</h3>
+            <p>A sci‑fi themed mission dashboard about an active expedition to the Alpha Centauri system, built as the main IT223 web project.</p>
+            <ul>
+              <li>Multi‑page layout with sections like Home, Crew, Status, and Daily Log</li>
+              <li>HTML, CSS, and JavaScript used to present mission status and daily updates</li>
+            </ul>
+            <p><a href="../IT223_BABOR/it223.html">View Activity</a></p>
+          </article>
+          <article class="card">
+            <img src="../assets/img/proj-profile-card.svg" alt="" class="card-img" />
+            <h3>Profile Card</h3>
+            <p>A stylish profile card showcasing a user's avatar, name, title, and social media links, created as a practice project for HTML/CSS skills.</p>
+            <ul>
+              <li>Card-style UI in pure HTML/CSS</li>
+              <li>Good typography and color balance</li>
+            </ul>
+            <p><a href="../Profile-card_Babor/profilecard.html">View Activity</a></p>
+          </article>
+          <article class="card">
+            <img src="../assets/img/proj-todo.svg" alt="" class="card-img" />
+            <h3>To‑Do List</h3>
+            <p>A simple To‑Do List app built with JavaScript, allowing users to add and remove tasks.</p>
+            <ul>
+              <li>JavaScript DOM manipulation</li>
+              <li>Simple, focused UI for practice</li>
+            </ul>
+            <p><a href="../ToDoListLab/todolistlab.html">View Activity</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section games-section">
+      <div class="wrap">
+        <h2 class="section-title">
+          <img src="../assets/img/lab-icon.svg" alt="" class="section-title-icon" />
+          Playable Game
+        </h2>
+        <p class="section-subtitle" style="margin-bottom: 2rem;">Enjoy a simple browser-based Memory Match game.</p>
+
+        <div class="game-panel active" id="panel-memory">
+          <div class="game-info">
+            <h2>Memory Match</h2>
+            <p>Tap cards to flip. Find all pairs to win!</p>
+            <div class="game-stats">
+              <span>Moves: <strong id="memory-moves">0</strong></span>
+            </div>
+            <button type="button" class="btn btn-primary" id="memory-start">New Game</button>
+          </div>
+          <div class="memory-grid" id="memory-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="thanks">
+      <div class="wrap">
+        <h2 class="section-title">
+          <img src="../assets/img/about-icon.svg" alt="" class="section-title-icon" />
+          Thank You
+        </h2>
+        <p class="section-subtitle">Thank you for viewing my portfolio and lab activities!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Babor. All rights reserved. Thank you for viewing!</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/memory.js"></script>
+</body>
+</html>

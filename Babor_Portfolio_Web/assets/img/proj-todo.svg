@@ -1,0 +1,28 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="todo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f" />
+      <stop offset="100%" stop-color="#0b0612" />
+    </linearGradient>
+    <linearGradient id="todo-check" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f973a1" />
+      <stop offset="100%" stop-color="#2dd4bf" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="320" height="200" fill="url(#todo-bg)" />
+  <rect x="60" y="42" width="200" height="116" rx="14" fill="#020617" stroke="rgba(148,163,184,0.6)" />
+  <g transform="translate(76 60)" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="16" height="16" rx="3" stroke="rgba(148,163,184,0.7)" />
+    <path d="M3 8.5 7 12l6-7" stroke="url(#todo-check)" />
+    <rect x="0" y="26" width="16" height="16" rx="3" stroke="rgba(148,163,184,0.7)" />
+    <rect x="0" y="52" width="16" height="16" rx="3" stroke="rgba(148,163,184,0.7)" />
+  </g>
+  <g transform="translate(104 63)" fill="#e5e7eb">
+    <rect x="0" y="0" width="124" height="6" rx="3" />
+    <rect x="0" y="10" width="88" height="5" rx="2.5" fill="rgba(148,163,184,0.7)" />
+    <rect x="0" y="28" width="110" height="6" rx="3" />
+    <rect x="0" y="38" width="76" height="5" rx="2.5" fill="rgba(148,163,184,0.7)" />
+    <rect x="0" y="56" width="96" height="6" rx="3" />
+  </g>
+</svg>
+

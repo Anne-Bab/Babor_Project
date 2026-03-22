@@ -1,0 +1,21 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="profile-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050009" />
+      <stop offset="100%" stop-color="#1e3a5f" />
+    </linearGradient>
+    <radialGradient id="profile-avatar" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#fee2e2" />
+      <stop offset="45%" stop-color="#f973a1" />
+      <stop offset="100%" stop-color="#1f2937" />
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="320" height="200" fill="url(#profile-bg)" />
+  <rect x="72" y="40" width="176" height="120" rx="16" fill="#020617" stroke="rgba(148,163,184,0.6)" />
+  <circle cx="104" cy="82" r="26" fill="url(#profile-avatar)" />
+  <rect x="144" y="64" width="80" height="10" rx="5" fill="#e5e7eb" />
+  <rect x="144" y="82" width="64" height="8" rx="4" fill="#94a3b8" />
+  <rect x="88" y="120" width="104" height="8" rx="4" fill="rgba(148,163,184,0.55)" />
+  <rect x="88" y="136" width="72" height="8" rx="4" fill="rgba(148,163,184,0.35)" />
+</svg>
+

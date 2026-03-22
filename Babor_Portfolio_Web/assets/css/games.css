@@ -1,0 +1,158 @@
+/* Games page */
+.games-section {
+  padding: 2rem 0 4rem;
+}
+
+/* tabs removed; only single memory game remains */
+
+.game-panel {
+  display: none;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.game-panel.active {
+  display: flex;
+}
+
+.game-info {
+  flex: 1;
+  min-width: 240px;
+  max-width: 320px;
+}
+
+.game-info h2 {
+  margin: 0 0 0.5rem;
+  color: var(--akaza-text);
+  font-size: 1.5rem;
+}
+
+.game-info p {
+  margin: 0 0 1rem;
+  color: var(--akaza-muted);
+  font-size: 0.9rem;
+}
+
+.game-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--akaza-muted);
+}
+
+.game-stats strong {
+  color: var(--akaza-pink);
+}
+
+.game-canvas-wrap {
+  background: rgba(15, 10, 20, 0.8);
+  border: 2px solid var(--akaza-border);
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.game-canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.game-touch-controls {
+  margin-top: 0.75rem;
+  display: none; /* hidden by default (desktop) */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.touch-btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  border: 2px solid var(--akaza-border);
+  background: rgba(15, 10, 20, 0.9);
+  color: var(--akaza-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  min-width: 2.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+.touch-btn:active {
+  transform: translateY(1px) scale(0.98);
+  border-color: var(--akaza-pink);
+  color: var(--akaza-pink);
+}
+
+/* chess styles removed; chess game no longer present */
+
+/* Memory game grid */
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.memory-card {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: 2px solid var(--akaza-border);
+  background: linear-gradient(135deg, var(--akaza-blue), var(--akaza-blue-light));
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: transparent;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.memory-card:hover {
+  border-color: var(--akaza-pink);
+}
+
+.memory-card.flipped,
+.memory-card.matched {
+  color: var(--akaza-text);
+  background: rgba(45, 212, 191, 0.3);
+  border-color: var(--akaza-teal);
+}
+
+.memory-card.matched {
+  opacity: 0.7;
+  cursor: default;
+}
+
+@media (max-width: 640px) {
+  .game-panel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .game-stats {
+    justify-content: center;
+  }
+
+  .memory-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    max-width: 280px;
+  }
+
+  .memory-card {
+    font-size: 1.25rem;
+  }
+}

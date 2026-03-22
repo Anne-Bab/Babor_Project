@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 1: The Observer | Babor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="../index.html" class="logo">Babor<span>.</span></a>
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Lab Activities</a>
+        <a href="contact.html">Contact</a>
+        <a href="thankyou.html">Thank You</a>
+      </nav>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-hero">
+      <div class="wrap">
+        <div class="page-hero-icon-wrapper">
+          <img src="../assets/img/observer-icon.svg" alt="Observer icon" class="page-hero-icon" />
+        </div>
+        <p class="hero-tag">Lab 1</p>
+        <h1>The Observer</h1>
+        <p>An interactive observation exercise exploring DOM manipulation and event handling.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="observer-lab">
+          <div class="observer-controls">
+            <button id="observeBtn" class="btn btn-primary">Start Observing</button>
+            <button id="resetBtn" class="btn btn-outline">Reset</button>
+          </div>
+          <div class="observer-display" id="observerDisplay">
+            <p class="observer-message">Click "Start Observing" to begin tracking interactions.</p>
+          </div>
+          <div class="observer-stats">
+            <div class="stat-item">
+              <span class="stat-label">Clicks:</span>
+              <span class="stat-value" id="clickCount">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Mouse Moves:</span>
+              <span class="stat-value" id="moveCount">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Key Presses:</span>
+              <span class="stat-value" id="keyCount">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="thanks">
+      <div class="wrap">
+        <h2 class="section-title">
+          <img src="../assets/img/about-icon.svg" alt="" class="section-title-icon" />
+          Thank You
+        </h2>
+        <p class="section-subtitle">Thank you for exploring this lab activity!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Babor. All rights reserved. Thank you for viewing!</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/lab1-observer.js"></script>
+</body>
+</html>

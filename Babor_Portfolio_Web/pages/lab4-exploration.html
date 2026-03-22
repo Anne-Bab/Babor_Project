@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 4: Self-Exploration | Babor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="../index.html" class="logo">Babor<span>.</span></a>
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Lab Activities</a>
+        <a href="contact.html">Contact</a>
+        <a href="thankyou.html">Thank You</a>
+      </nav>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-hero">
+      <div class="wrap">
+        <div class="page-hero-icon-wrapper">
+          <img src="../assets/img/palette-icon.svg" alt="Color Palette icon" class="page-hero-icon" />
+        </div>
+        <p class="hero-tag">Lab 4</p>
+        <h1>Interactive Color Palette Generator</h1>
+        <p>A self-exploration project combining HTML, CSS, and JavaScript to create dynamic color palettes with real-time preview.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="color-generator">
+          <div class="generator-controls">
+            <h3>Generate Your Palette</h3>
+            <div class="control-group">
+              <label for="colorCount">Number of Colors:</label>
+              <input type="number" id="colorCount" min="3" max="8" value="5" class="control-input" />
+            </div>
+            <div class="control-group">
+              <label for="baseHue">Base Hue:</label>
+              <input type="range" id="baseHue" min="0" max="360" value="240" class="control-slider" />
+              <span id="hueValue">240°</span>
+            </div>
+            <button id="generateBtn" class="btn btn-primary">Generate Palette</button>
+            <button id="randomBtn" class="btn btn-outline">Random Colors</button>
+          </div>
+          <div class="palette-display" id="paletteDisplay">
+            <div class="palette-color" style="background: #f973a1;">
+              <span class="color-code">#f973a1</span>
+            </div>
+            <div class="palette-color" style="background: #2dd4bf;">
+              <span class="color-code">#2dd4bf</span>
+            </div>
+            <div class="palette-color" style="background: #1e3a5f;">
+              <span class="color-code">#1e3a5f</span>
+            </div>
+            <div class="palette-color" style="background: #eab308;">
+              <span class="color-code">#eab308</span>
+            </div>
+            <div class="palette-color" style="background: #ff40d2;">
+              <span class="color-code">#ff40d2</span>
+            </div>
+          </div>
+          <div class="palette-preview">
+            <h3>Preview</h3>
+            <div class="preview-box" id="previewBox">
+              <h4>Sample Heading</h4>
+              <p>This is how your color palette looks in a real interface. Click any color above to apply it as the primary color.</p>
+              <button class="btn btn-primary">Sample Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="thanks">
+      <div class="wrap">
+        <h2 class="section-title">
+          <img src="../assets/img/about-icon.svg" alt="" class="section-title-icon" />
+          Thank You
+        </h2>
+        <p class="section-subtitle">Thank you for exploring this self-exploration lab!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Babor. All rights reserved. Thank you for viewing!</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/lab4-exploration.js"></script>
+</body>
+</html>

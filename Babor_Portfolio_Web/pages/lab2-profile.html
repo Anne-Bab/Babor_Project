@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 2: Profile Card | Babor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="../index.html" class="logo">Babor<span>.</span></a>
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Lab Activities</a>
+        <a href="contact.html">Contact</a>
+        <a href="thankyou.html">Thank You</a>
+      </nav>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-hero">
+      <div class="wrap">
+        <div class="page-hero-icon-wrapper">
+          <img src="../assets/img/profile-icon.svg" alt="Profile Card icon" class="page-hero-icon" />
+        </div>
+        <p class="hero-tag">Lab 2</p>
+        <h1>Profile Card</h1>
+        <p>A card-style component exploring layout, spacing, and hover effects.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="profile-card-container">
+          <div class="profile-card">
+            <div class="profile-header">
+              <div class="profile-avatar">
+                <span>B</span>
+              </div>
+              <h2 class="profile-name">Babor</h2>
+              <p class="profile-title">Front-End Developer</p>
+            </div>
+            <div class="profile-body">
+              <p class="profile-bio">Building clean, responsive web experiences with HTML, CSS, and JavaScript.</p>
+              <div class="profile-skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="profile-footer">
+              <a href="https://github.com/Anne-Bab/Babor_Project/tree/main/Profile-card_Babor" target="_blank" rel="noreferrer" class="profile-link">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="thanks">
+      <div class="wrap">
+        <h2 class="section-title">
+          <img src="../assets/img/about-icon.svg" alt="" class="section-title-icon" />
+          Thank You
+        </h2>
+        <p class="section-subtitle">Thank you for viewing this profile card lab!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Babor. All rights reserved. Thank you for viewing!</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
